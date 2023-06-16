@@ -1,0 +1,40 @@
+{
+  "name": "vitrineshahre",
+  "version": "1.0.0",
+  "description": "",
+  "source": [
+    "src/index.html",
+    "src/product.html",
+    "src/products.html"
+  ],
+  "scripts": {
+    "start": "parcel serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "7.18.13",
+    "@babel/preset-env": "7.18.10",
+    "@parcel/transformer-sass": "^2.9.1",
+    "autoprefixer": "10.4.8",
+    "core-js": "^3.30.2",
+    "eslint-plugin-compat": "4.0.2",
+    "parcel": "^2.9.1",
+    "postcss-normalize": "10.0.1",
+    "sass": "^1.62.1"
+  },
+  "browserslist": [
+    "> 0.3% ",
+    "Chrome >= 40",
+    "Firefox >= 36",
+    "Edge >= 101",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4.4",
+    "not Android 4.4",
+    "Samsung >= 4",
+    "not IE 11"
+  ]
+}

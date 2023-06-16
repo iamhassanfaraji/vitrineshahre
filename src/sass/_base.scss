@@ -1,0 +1,66 @@
+// #baseLayout
+
+/*
+* my main breakpoint for responsive are:
+*   mobile:366px
+*   tablet:768px
+*   computer:1366px
+*/
+
+$mobile:366;
+$tablet:700px;
+
+@mixin padding-container($screenSize:"computer") {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    @if $screenSize == "computer" {
+        max-width: 1300px;
+    }@else if $screenSize == "other" {
+        max-width: calc(100vw - 100px);
+    }
+}
+
+@mixin buttonLink {
+    color:#fff;
+    background-color: #3474d4;
+    padding: 10px;
+    cursor: pointer;
+    border-radius:5px;
+    &:hover{
+        background-color: #555;
+    }
+}
+
+@mixin normal-link{
+    color: inherit;
+    &:hover{
+        color: #3474d4;
+    }
+}
+
+@mixin primaryButton{
+    color:#fff;
+    background-color: #3474d4;
+    padding: 10px;
+    &:hover{
+        background-color: #555;
+    }
+}
+
+@mixin secondaryButton {
+    color: #fff;
+    background-color: #555;
+    padding: 10px;
+    &:hover{
+        background-color: #3474d4;
+    }
+}
+
+@mixin tertiaryButton {
+    color: inherit;
+    &:hover{
+        color: #3474d4 ;
+    }
+}
+

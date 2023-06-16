@@ -1,0 +1,168 @@
+//  rules of utilities : 
+//      1: code should be abstract
+//      2: for prevent insert, unused code new use conditional sass like:
+//              if ( $value ){
+//                  .class{ color: red }    
+//              }
+//          alternative use tree shaking   
+
+@use 'base';
+
+@mixin slider($width:100%, $height:false){
+
+    .slider{
+        position: relative;
+        width: $width;
+        overflow: hidden;
+        @if $height {
+            height: $height;
+        }
+        .slides{
+            transform: translateX(0);
+            display: flex;
+            transition: all 0.5s;  
+        }
+        .slide{
+            position: relative;
+            min-width: $width;
+            overflow: hidden;
+            height: $height;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            transform-origin: top right;
+        }
+
+        .bullets-navigation{
+            position: absolute;
+            bottom: 20px;
+            right: 50%;
+            transform: translateX(50%);
+            display: flex;
+            .bullet{
+                cursor: pointer;
+                display: inline-block;
+                width: 7px;
+                height: 7px;
+                background-color: gray;
+                border-radius: 50%;
+                margin-left: 5px;
+                &.active{
+                    background-color: #3474d4;
+                }
+            }
+        }
+        
+
+        .arrow-navigation{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 998;
+            font-size: 28px;
+            @include base.primaryButton;
+
+            &::after{
+                content:"\e909";
+                color: #fff;
+            }
+
+        }
+        .right-nav{
+            right: 0;
+        }
+        .left-nav{
+            left: 0;
+            &::after{
+                transform: rotate(180deg);
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+@mixin dropdown-menu {
+    .dropdown-menu{
+        & > button{
+            display: inline-flex;
+            align-items: center;
+        }
+        .menu-list{
+            background-color: white;
+            margin: 5px;
+            li{
+                padding: 8px 20px; 
+            }
+        }
+
+        &.float{
+            position: relative;
+
+            &:hover{
+                & > button{
+                    color: #3474d4;
+                    &::after{
+                        transform: rotate(270deg);
+                        color: #3474d4;
+                    }
+                }
+                & > .submenu-type-a,
+                & > .submenu-type-b{
+                    display: block;
+                }
+            }
+
+            .submenu-type-a,
+            .submenu-type-b{
+                position: absolute;
+                z-index: 999;
+                display: none;
+            }
+            .submenu-type-a{
+                top: 100%;
+            }
+            .submenu-type-b{
+                right: 100%;
+                top: 0;
+            }
+
+            .menu-list{
+                box-shadow: 0 0 5px 1px rgb(0 0 0 / 20%);
+            }
+        }
+        &.static{
+            transition: height 0.2s linear;
+            overflow: hidden;
+            &.active{
+                & > button{
+                    color: #3474d4; 
+                    &::after{
+                        transform: rotate(270deg);
+                        color: #3474d4;
+                    }
+                }
+                
+            }
+            .submenu-type-a{
+                height: 0;
+                overflow: hidden;
+                transition: height 0.2s linear;
+            }
+            .menu-list{
+                border-right:1px solid #3474d4;
+            }
+        }
+       
+    }
+}

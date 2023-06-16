@@ -1,0 +1,24 @@
+@font-face {
+    font-family:'icon-font';
+    src: url('../assets/icon/global-icons.woff') format('woff') ;
+}
+[class^='icon-moon']{
+      /* use !important to prevent issues with browser extensions that change fonts */
+      &::after,
+      &::before{
+        font-family: 'icon-font' !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        font-size: 17px;
+        color: inherit;
+        cursor: pointer;
+      
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      } 
+}

@@ -1,0 +1,9 @@
+@use 'aside';
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
