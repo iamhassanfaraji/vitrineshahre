@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="sass/global.scss" rel="stylesheet"/>
-    <link href="sass/products.scss" rel="stylesheet"/>
+    <link href="sass/global.scss" rel="stylesheet" />
+    <link href="sass/products.scss" rel="stylesheet" />
 </head>
+
 <body>
     <div id="header-container">
         <header>
             <div id="baseLayout" class="header-top">
                 <div class="computer-resolution">
-                    <a  href="#" class="logo">ویترین شهر</a>
+                    <a href="#" class="logo">ویترین شهر</a>
                     <form action="#" method="post" class="searching">
-                        <input type="text" placeholder="جستجو..."/>
+                        <input type="text" placeholder="جستجو..." />
                         <button type="submit" class="icon-moon-search"></button>
                     </form>
                     <div class="left-nav">
@@ -29,7 +31,7 @@
                         <nav>
                             <span><a href="#">خانه</a></span>
                             <span class="dropdown-menu static level-0">
-                                <button class="icon-moon" >دسته بندی</button>
+                                <button class="icon-moon">دسته بندی</button>
                                 <div class="submenu-type-a">
                                     <ul class="menu-list">
                                         <li class="dropdown-menu static">
@@ -127,7 +129,7 @@
                                         </li>
                                         <li>
                                             <a href="#">سوپر مارکت</a>
-                                            
+
                                         </li>
                                         <li>
                                             <a href="#">مد و پوشاک</a>
@@ -148,12 +150,12 @@
                 </div>
                 <div class="mobile-tablet-resolution">
                     <form action="#" method="post" class="searching">
-                        <input type="text" placeholder="جستجو..."/>
+                        <input type="text" placeholder="جستجو..." />
                         <button type="submit" class="icon-moon-search"></button>
                     </form>
                 </div>
             </div>
-       </header>
+        </header>
     </div>
 
     <section class="main">
@@ -165,28 +167,54 @@
                             <div class="category-nav">
                                 <h4>دسته بندی</h4>
                                 <ul class="list-category">
-                                    <li class="dropdown-menu static ">
+                                    <li class="dropdown-menu static item-category">
                                         <button class="icon-moon">
                                             کالای دیجیتال
                                         </button>
                                         <div class="submenu-type-a">
                                             <ul class="menu-list">
-                                                <li class="item-category">
+                                                <li class="item-category dropdown-menu static">
                                                     <button class="icon-moon">
                                                         گوشی
                                                     </button>
-                                                    <ul class="list-category">
-                                                        <li><a href="#">اپل</a></li>
-                                                        <li><a href="#">سامسونگ</a></li>
-                                                        <li><a href="#">سونی</a></li>
-                                                        <li><a href="#">هوآوی</a></li>
-                                                    </ul>
+                                                    <div class="submenu-type-a">
+                                                        <ul class="list-category menu-list ">
+                                                            <li><a href="#">اپل</a></li>
+                                                            <li><a href="#">سامسونگ</a></li>
+                                                            <li><a href="#">سونی</a></li>
+                                                            <li><a href="#">هوآوی</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
-                                                <li></li>
-                                                <li></li>
+                                                <li class="item-category dropdown-menu static">
+                                                    <button class="icon-moon">
+                                                        لپتاپ
+                                                    </button>
+                                                    <div class="submenu-type-a">
+                                                        <ul class="list-category menu-list">
+                                                            <li><a href="#">ایسوس</a></li>
+                                                            <li><a href="#">اچ پی</a></li>
+                                                            <li><a href="#">لنوو</a></li>
+                                                            <li><a href="#">اپل</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="item-category dropdown-menu static">
+                                                    <button class="icon-moon">
+                                                        لوازم جانبی
+                                                    </button>
+                                                    <div class="submenu-type-a">
+                                                        <ul class="list-category menu-list">
+                                                            <li><a href="#">کابل شارژ</a></li>
+                                                            <li><a href="#">کول پد</a></li>
+                                                            <li><a href="#">قاب گوشی</a></li>
+                                                            <li><a href="#">گلس</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
-                                        
+
                                     </li>
                                     <li class="item-category">
                                         <a href="#">مد و پوشاک</a>
@@ -195,7 +223,7 @@
                                         <a href="#">لوازم تحریر و کتاب</a>
                                     </li>
                                     <li class="item-category">
-                                       <a href="#">لوازم خانگی</a>
+                                        <a href="#">لوازم خانگی</a>
                                     </li>
                                     <li class="item-category">
                                         <a href="#"> سوپر مارکت</a>
@@ -233,7 +261,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card" >
+                <a href="#" class="card">
                     <div class="top" style="background-image:url('./assets/image/products/1.jpg');">
                         <img src="./assets/image/products/1.jpg" alt="">
                     </div>
@@ -255,7 +283,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card" >
+                <a href="#" class="card">
                     <div class="top" style="background-image:url('./assets/image/products/7.jpg');">
                         <img src="./assets/image/products/7.jpg" alt="">
                     </div>
@@ -277,7 +305,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card" >
+                <a href="#" class="card">
                     <div class="top" style="background-image:url('./assets/image/products/2.jpg');">
                         <img src="./assets/image/products/2.jpg" alt="">
                     </div>
@@ -299,7 +327,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card" >
+                <a href="#" class="card">
                     <div class="top" style="background-image:url('./assets/image/products/3.jpg');">
                         <img src="./assets/image/products/3.jpg" alt="">
                     </div>
@@ -320,7 +348,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card" >
+                <a href="#" class="card">
                     <div class="top" style="background-image:url('./assets/image/products/4.jpg');">
                         <img src="./assets/image/products/4.jpg" alt="">
                     </div>
@@ -342,7 +370,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card" >
+                <a href="#" class="card">
                     <div class="top" style="background-image:url('./assets/image/products/5.jpg');">
                         <img src="./assets/image/products/5.jpg" alt="">
                     </div>
@@ -363,7 +391,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="card" >
+                <a href="#" class="card">
                     <div class="top" style="background-image:url('./assets/image/products/6.jpg');">
                         <img src="./assets/image/products/6.jpg" alt="">
                     </div>
@@ -388,9 +416,9 @@
                 </a>
             </main>
         </div>
-   </section>
+    </section>
 
-   <footer>
+    <footer>
         <div class="top">
             <div id="baseLayout">
                 <p>در مسابقه شرکت کنید و برنده جایزه 10میلیونی شوید.</p>
@@ -435,4 +463,5 @@
     </footer>
     <script src="js/global.js" type="module"></script>
 </body>
+
 </html>
